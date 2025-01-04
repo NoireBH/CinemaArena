@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CinemaArena.Common
 {
-	internal class NotificationMessagesConstants
+	public class NotificationMessagesConstants
 	{
+		public const string ErrorMessage = "ErrorMessage";
+		public const string WarningMessage = "WarningMessage";
+		public const string InfoMessage = "InfoMessage";
+		public const string SuccessMessage = "SuccessMessage";
 	}
 }

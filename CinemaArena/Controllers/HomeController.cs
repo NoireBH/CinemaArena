@@ -1,24 +1,23 @@
+
 using CinemaArena.Models;
+using CinemaArena.Web.Controllers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace CinemaArena.Controllers
 {
-	public class HomeController : Controller
+	public class HomeController : BaseController
 	{
-		private readonly ILogger<HomeController> _logger;
+		private readonly ILogger<HomeController> logger;
 
 		public HomeController(ILogger<HomeController> logger)
 		{
-			_logger = logger;
+			this.logger = logger;
 		}
 
+		[AllowAnonymous]
 		public IActionResult Index()
-		{
-			return View();
-		}
-
-		public IActionResult Privacy()
 		{
 			return View();
 		}

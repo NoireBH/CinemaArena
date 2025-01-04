@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CinemaArena.Data\CinemaArena.Data.csproj" />
+    <ProjectReference Include="..\CinemaArena.Web.ViewModels\CinemaArena.Web.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

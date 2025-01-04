@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace CinemaArena.Common
 {
-	internal class GeneralConstants
+	public class GeneralConstants
 	{
+		public class AdminUser
+		{
+			public const string AdminRoleName = "Administrator";
+			public const string AdminEmail = "admin_cinemaArena@gmail.com";
+			public const string AdminAreaName = "Admin";
+		}
 	}
 }

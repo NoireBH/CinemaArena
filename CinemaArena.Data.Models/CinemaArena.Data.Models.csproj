@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CinemaArena.Common\CinemaArena.Common.csproj" />
+  </ItemGroup>
+
 </Project>
