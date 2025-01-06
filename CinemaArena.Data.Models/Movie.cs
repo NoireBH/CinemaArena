@@ -24,6 +24,9 @@ namespace CinemaArena.Data.Models
 		[Required]
 		public string TrailerUrl { get; set; } = null!;
 
+		[Required]
+		public string Image { get; set; } = null!;
+
 
 	}
 }
