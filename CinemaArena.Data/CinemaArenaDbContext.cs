@@ -1,4 +1,5 @@
-﻿using CinemaArena.Data.Models;
+﻿using CinemaArena.Data.Configurations;
+using CinemaArena.Data.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +23,9 @@ namespace CinemaArena.Data
 		{
 			builder.Entity<MovieGenre>().HasKey(x => new { x.GenreId, x.MovieId });
 
-			base.OnModelCreating(builder);
+            builder.ApplyConfiguration(new MovieEntityConfiguration());
+
+            base.OnModelCreating(builder);
 		}
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
