@@ -22,7 +22,7 @@ namespace CinemaArena.Services.Data
 
 		public async Task<MovieViewModel[]> GetFiveLatestMovies()
 		{
-			Movie[] allMovies = await context.Movies.AsNoTracking().OrderBy(x => x.Id).ToArrayAsync();
+			Movie[] allMovies = await context.Movies.AsNoTracking().OrderBy(x => x.Id).Take(5).ToArrayAsync();
 
 			MovieViewModel[] movies = allMovies
 				.Select(m => new MovieViewModel
@@ -30,7 +30,8 @@ namespace CinemaArena.Services.Data
 					Id = m.Id,
 					Name = m.Title,
 					Image = m.Image
-				}).ToArray();
+				})				
+				.ToArray();
 
 			return movies;
 		}

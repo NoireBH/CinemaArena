@@ -18,6 +18,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CinemaArena.Data\CinemaArena.Data.csproj" />
+    <ProjectReference Include="..\CinemaArena.Services.Data\CinemaArena.Services.Data.csproj" />
+    <ProjectReference Include="..\CinemaArena.Web.Infrastructure\CinemaArena.Web.Infrastructure.csproj" />
     <ProjectReference Include="..\CinemaArena.Web.ViewModels\CinemaArena.Web.ViewModels.csproj" />
   </ItemGroup>
 

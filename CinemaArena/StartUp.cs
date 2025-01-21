@@ -1,5 +1,7 @@
 using CinemaArena.Data;
 using CinemaArena.Data.Models;
+using CinemaArena.Services.Data.Interfaces;
+using CinemaArena.Web.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +21,8 @@ builder.Services.AddMvc((options) =>
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
 	.AddEntityFrameworkStores<CinemaArenaDbContext>();
+
+builder.Services.AddApplicationServices(typeof(IMovieService));
 
 builder.Services.AddControllersWithViews();
 
