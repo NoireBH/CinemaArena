@@ -20,3 +20,16 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.cinema-arena-title {
+    color: #e50914; /* Netflix-inspired red */
+    text-decoration: none; /* No underline */
+    text-align: center; /* Center the text */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    font-size: 2.5rem; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    letter-spacing: 2px; /* Add spacing between letters */
+    text-transform: uppercase; /* Make all letters uppercase */
+    line-height: 1.2; /* Adjust line spacing */
+    display: block; /* Ensure proper centering */
+}

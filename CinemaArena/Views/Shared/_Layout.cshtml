@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - CinemaArena</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/owlCarousel/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/owlCarousel2/dist/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CinemaArena.styles.css" asp-append-version="true" />
 </head>
@@ -24,13 +26,11 @@
                     </ul>
                 </div>
 
-                <!-- Centered Logo -->
                 <div class="navbar-brand mx-auto">
-                    <a asp-area="" asp-controller="Home" asp-action="Index">
-                        <img src="~/Images/Cinema.png" alt="CinemaArena Logo" class="logo" style="height: 50px;"> <!-- Adjust height -->
+                    <a class="cinema-arena-title" asp-area="" asp-controller="Home" asp-action="Index">
+                        <h1>Cinema Arena</h1>
                     </a>
                 </div>
-
                 <!-- LoginPartial on the right -->
                 <div class="d-flex justify-content-end">
                     <partial name="_LoginPartial" />
@@ -53,7 +53,10 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/owlCarousel2/dist/js/owl.carousel.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/owlCarouselInit.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
