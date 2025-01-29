@@ -7,7 +7,8 @@
             <div class="item">
                 <a asp-controller="Movie" asp-action="Details"
                    asp-route-id="@featuredMovie.Id" class="d-flex justify-content-center">
-                    <img class="d-block img-responsive" style="height:500px" 
+                    <img class="d-block img-fluid"
+                         style="max-height: 500px; width: auto; object-fit: contain;"
                          alt="@featuredMovie.Name" src="@featuredMovie.Image">
                 </a>
             </div>
